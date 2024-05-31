@@ -200,8 +200,7 @@
     <script>
         document.getElementById('signup-form').addEventListener('submit', function(event) {
             event.preventDefault();
-
-            // Clear previous error messages
+            
             document.querySelectorAll('.error-message').forEach(function(elem) {
                 elem.textContent = '';
             });

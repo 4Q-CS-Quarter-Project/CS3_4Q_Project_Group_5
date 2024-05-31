@@ -1,100 +1,143 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navbar{
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     top: 0;
     padding: 10px;
     height: 9vh;
     width: 100vw;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
+    z-index: 10;
 }
-.logo img{
-    margin-top: -3.5vh;
+
+.navbar .logo {
+    margin-left: 1.5em;
+}
+
+.navbar .logo img {
     border-radius: 360px;
     height: 45px;
-    margin-left: 7vh;
 }
-.navbar #links{
-    display: inline;
+
+.navbar div {
+    display: flex;
+    align-items: center;
 }
-.navbar #links a{
-    margin-left: 12vw;
+
+.navbar #links, .navbar #lenks, .navbar #leynks {
+    margin-right: 1.5em;
+}
+
+.navbar a {
+    margin-left: 1em;
     text-decoration: none;
-    color: #453735;
-    font-family: Poetsen One;
+    color: #362c2b;
+    font-family: 'Poetsen One', sans-serif;
     font-size: 16px;
 }
-.navbar #lenks a{
+
+.navbar #lenks a, .navbar #leynks a {
     padding: 7px;
-    float: right;
-    margin-right: 6px;
-    text-decoration: none;
-    margin-top: -.010vh;
-    color: #A6A6A6;
-    font-family: Poetsen One;
+    color: #948f83;
     font-size: 15px;
 }
-.navbar #leynks a{
-    padding: 8px;
-    float: right;
-    margin-right: 30px;
-    text-decoration: none;
-    margin-top: -.16vh;
-    color: #453735;
-    font-family: Poetsen One;
-    font-size: 14px;
-    border-radius: 10px;
-    background-color: #A6A6A6;
 
+.navbar #leynks a {
+    background-color: #494141;
+    border-radius: 10px;
 }
-.banner{
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.banner {
     padding: 1.5vw;
-    background-color: #F1EDE3;
-    height: 93.6vh;
-    width: 97vw;
+    background-color: rgba(241, 237, 227, 0.14);
+    height: 100vh;
+    width: 100vw;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    overflow: auto;
 }
-.banner h1{
-font-family: Open Sans;
-color: #453735;
-margin-top: 5em;
-margin-left: 1.8em;
+
+.banner h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #241d1c;
+    margin-top: 5em;
+    margin-left: 1.8em;
 }
-.bot{
-font-family: Open Sans;
-margin-top: -1.4vh;
-color: #453735;
-margin-left: 2.2em;
-font-size: 23px;
+
+.bot {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -1.4vh;
+    color: #453735;
+    margin-left: 2.2em;
+    font-size: 23px;
 }
-.logo2{
+
+.logo2 {
     margin-top: 5vh;
     border-radius: 360px;
     height: 45px;
     margin-left: 8vh;
 }
-.group{
+
+.group {
     margin-left: 9vw;
     margin-top: -6vh;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
-.det{
+
+.det {
     margin-left: 4vw;
     margin-top: 5vh;
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     font-size: 13px;
 }
-.big{
-    margin-left: 47em;
-    margin-top: -70em;
-    width: 30vw;
-    height: 300px;
-    border-radius: 20px;
+
+.dog {
+    float: right;
+    margin-right: 2vm;
+    margin-top: 2vh;
+    width: 30%;
+    height: auto;
+    right: 40vh;
+    border-radius: 5px;
 }
